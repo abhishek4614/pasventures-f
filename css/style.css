@@ -232,7 +232,11 @@ nav .top-nav {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    background-attachment: fixed;
 
+}
+nav .top-nav .contact{
+    margin-top: 4.5rem;
 }
 
 nav .top-nav .contact i {
@@ -256,14 +260,18 @@ nav .top-nav .contact h5:hover {
 
 }
 
-
+nav .top-nav .logo{
+    margin-top: 4.5rem;
+}
 nav .top-nav .logo img {
     width: auto;
-    height: 7rem;
+    height: 4rem;
     background-color: #ffffff;
     border-radius: 4px;
 }
-
+nav .top-nav .mail{
+    margin-top: 4.5rem;
+}
 nav .top-nav .mail i {
     padding: 0 .5rem;
     color: #ffffff;
@@ -286,18 +294,34 @@ nav .top-nav .mail h5:hover {
 .justify-center {
     justify-content: center;
 }
+                        /* navbar menu */
 
-nav .navbar a {
+  nav.navbar{
+      
+     
+      margin-top: 10px;
+     background-color: transparent !important;
+
+  }  
+  
+  .navbar ul{
+      padding: .9rem 0;
+    
+
+  }                    
+
+nav .navbar ul a {
     text-decoration: none;
     color: var(--secondary);
     font-family: "Raleway-semibold";
-    font-size: 1rem;
-    padding: .5rem .5rem;
+    font-size: 1.1rem;
+    padding: .8rem .25rem;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    
 }
 
 nav .navbar a.active {
@@ -316,10 +340,29 @@ nav .navbar a:hover {
 
 }
 
-.navbar .container {
-    border: 1px solid rgb(94, 92, 92);
+.navbar .container ul  {
+    /* border: 1px solid rgb(94, 92, 92); */
     box-shadow: 10px 10px rgb(77, 75, 75);
+    background-color: rgb(245, 240, 240);
+    
 }
+.navbar .container  {
+    overflow: hidden;
+    padding-left: 8.1rem;
+  position: fixed;
+  
+  width: 100%;
+ z-index: 1;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #ffffff; */
+ 
+  }
+
+  
 
 /* .magic-shadow:after{
     content:'';
@@ -458,7 +501,7 @@ header.header-content button:first-child {
     margin-top: 1rem;
 }
 
-/* our services */
+                                            /* our services */
 
 section {
     padding: 2rem 0;
@@ -1444,7 +1487,7 @@ footer.copyright a {
 .servece-heading h1{
     margin: 0rem 2rem;
 }
-section .servece-para   ,p ,a , h4, .web-list{
+section .servece-para   ,p,a , h4{
     margin: 1rem 2rem;
     text-decoration: none;
     letter-spacing: 1px;
@@ -1453,21 +1496,43 @@ section .servece-para   ,p ,a , h4, .web-list{
     color: #ffffff
     
 }
+.servece-para div p{
+    margin: .5rem 2rem;
+}
 .servece-para p button{
     background-color: #0095b7;
     padding: .25rem 0;
     margin: .25rem 0;
+    border: none;
+}
+.servece-para p button:hover{
+    background-color: white;
+    border: 1px solid #0095b7;
+    
+}
+.servece-para p button a:hover{
+    color: #0095b7;
 }
 .web-list a{
     text-decoration: none;
     color: #ffffff;
 }
+.web-list ul{
+    margin: 1rem 2rem;
+}
 .web-list button{
     background-color: #0095b7;
     padding: .2rem 0;
-    margin: .25rem 0;
+    margin: .5rem 1.5rem;
+    border: none;
 }
-    
+.web-list button:hover{
+    background-color: #ffffff;
+    border: 1px solid #0095b7;
+}
+.web-list button a:hover {
+ color: #0095b7;
+} 
 
 @media (max-width:992px) {
 
