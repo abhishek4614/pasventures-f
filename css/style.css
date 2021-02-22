@@ -233,6 +233,12 @@ nav .top-nav {
     background-size: cover;
     overflow: hidden;
     background-attachment: fixed;
+    position: relative;
+    
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 
 }
 nav .top-nav .contact{
@@ -261,7 +267,8 @@ nav .top-nav .contact h5:hover {
 }
 
 nav .top-nav .logo{
-    margin-top: 4.5rem;
+    margin-top: 4.8rem;
+    z-index: 10;
 }
 nav .top-nav .logo img {
     width: auto;
@@ -274,7 +281,7 @@ nav .top-nav .mail{
 }
 nav .top-nav .mail i {
     padding: 0 .5rem;
-    color: #ffffff;
+    color: black;
 }
 
 nav .top-nav .mail h5 {
@@ -300,8 +307,8 @@ nav .top-nav .mail h5:hover {
       
      
       margin-top: 10px;
-     background-color: transparent !important;
-
+      background-color: rgb(245, 240, 240);
+width: 100%;
   }  
   
   .navbar ul{
@@ -315,7 +322,7 @@ nav .navbar ul a {
     color: var(--secondary);
     font-family: "Raleway-semibold";
     font-size: 1.1rem;
-    padding: .8rem .25rem;
+    padding: .5rem 0rem;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -332,6 +339,7 @@ nav .navbar a.active {
 nav .navbar a:hover {
     background: var(--primary);
     color: var(--pure);
+    padding: .8rem .5rem;
 }
 
 .magic-shadow {
@@ -342,24 +350,25 @@ nav .navbar a:hover {
 
 .navbar .container ul  {
     /* border: 1px solid rgb(94, 92, 92); */
-    box-shadow: 10px 10px rgb(77, 75, 75);
-    background-color: rgb(245, 240, 240);
+    /* box-shadow: 10px 10px rgb(77, 75, 75); */
+    
     
 }
-.navbar .container  {
+.navbar ul {
     overflow: hidden;
-    padding-left: 8.1rem;
+    /* padding-left: 8.1rem; */
   position: fixed;
   
   width: 100%;
  z-index: 1;
- 
+ padding: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: #ffffff; */
+  background-color: rgb(158, 154, 154);
  
+    
   }
 
   
@@ -378,12 +387,12 @@ nav .navbar a:hover {
     
 } */
 .navbar .container a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     transition: all 1s ease-in-out;
 }
 
-.magic-shadow-sm {
+/* .magic-shadow-sm {
     position: relative;
     background: var(--heaven);
 }
@@ -405,7 +414,7 @@ nav .navbar a:hover {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
+} */
 
 /* header content paragraph near navbar */
 
